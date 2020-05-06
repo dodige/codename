@@ -6,7 +6,7 @@ let readline = require('readline')
 let basewords = []
 var filename = './server/words.txt'
 readline.createInterface({
-    input: fs.createReadStream(filename, {encoding: 'binary'}),
+    input: fs.createReadStream(filename, {encoding: 'utf-8'}),
     terminal: false
 }).on('line', (line) => {basewords.push(line)})
 
