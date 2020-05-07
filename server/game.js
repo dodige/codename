@@ -6,8 +6,8 @@ let readline = require('readline')
 let basewords = []
 var filename = './server/words.txt'
 readline.createInterface({
-    input: fs.createReadStream(filename, { encoding: 'base64' }),
-    terminal: false
+    input: fs.createReadStream(filename),
+    terminal: true
 }).on('line', (line) => {basewords.push(line)})
 
 // Load NLSS words into an array
