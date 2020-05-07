@@ -4,7 +4,7 @@ let readline = require('readline')
 
 // Load base words into an array
 let basewords = []
-var filename = './server/words'
+var filename = './server/words.wd'
 readline.createInterface({
     input: fs.createReadStream(filename),
     terminal: true
