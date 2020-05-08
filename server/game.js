@@ -12,6 +12,8 @@ readline.createInterface({
     terminal: true
 }).on('line', (line) => {basewords.push(line.toString().normalize())})
 
+
+
 // Load NLSS words into an array
 let nlsswords = []
 filename = './server/nlss-words.txt'
