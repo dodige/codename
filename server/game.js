@@ -9,7 +9,7 @@ var filename = './server/words.wd'
 readline.createInterface({
     input: fs.createReadStream(filename),
     terminal: true
-}).on('line', (line) => {basewords.push(n(line))})
+}).on('line', (line) => {basewords.push(n(line.toString()))})
 
 // Load NLSS words into an array
 let nlsswords = []
