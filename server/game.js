@@ -10,7 +10,7 @@ var filename = './server/words.txt'
 readline.createInterface({
     input: fs.createReadStream(filename),
     terminal: true
-}).on('line', (line) => {basewords.push(line.toString().normalize())})
+}).on('line', (line) => {basewords.push(line)})
 
 
 
