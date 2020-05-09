@@ -10,6 +10,8 @@ readline.createInterface({
     terminal: false
 }).on('line', (line) => {basewords.push(line)})
 
+console.log(basewords.toString())
+
 // Load NLSS words into an array
 let nlsswords = []
 filename = './server/nlss-words.txt'
@@ -194,6 +196,8 @@ class Game{
     }
   }
 }
+
+
 
 // Let the main nodejs server know this file exists
 module.exports = Game;
