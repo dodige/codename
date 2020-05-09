@@ -7,12 +7,9 @@
     "express": "^4.17.1",
     "fs": "0.0.1-security",
     "heroku-client": "^3.1.0",
-    "normalize": "^0.3.1",
-    "normalize-strings": "^1.1.0",
     "readfile": "^1.0.1",
     "request": "^2.88.2",
     "socket.io": "^2.3.0",
-    "socketio": "^1.0.0",
     "socketio-wildcard": "^2.0.0"
   },
   "engines": {

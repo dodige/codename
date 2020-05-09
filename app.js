@@ -1,5 +1,6 @@
 
 ////////////////////////////////////////////////////////////////////////////
+
 // Express
 let express = require('express')
 
@@ -11,18 +12,18 @@ let server = app.listen(process.env.PORT || 2000, listen);
 
 // Callback function confirming server start
 function listen(){
- let host = server.address().address;
- let port = server.address().port;
+  let host = server.address().address;
+  let port = server.address().port;
   console.log('Codenames Server Started at http://' + host + ':' + port);
 }
 
-//Force SSL
+// Force SSL
 app.use((req, res, next) => {
   if (req.header('x-forwarded-proto') !== 'https') {
     res.redirect(`https://${req.header('host')}${req.url}`)
   } else {
     next();
- }
+  }
 });
 
 // Files for client

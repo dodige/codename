@@ -1,18 +1,14 @@
 
 let fs = require('fs')
 let readline = require('readline')
-//let n = require('normalize');
-//var n = require('normalize');
 
 // Load base words into an array
 let basewords = []
 var filename = './server/words.txt'
 readline.createInterface({
     input: fs.createReadStream(filename),
-    terminal: true
+    terminal: false
 }).on('line', (line) => {basewords.push(line)})
-
-
 
 // Load NLSS words into an array
 let nlsswords = []
